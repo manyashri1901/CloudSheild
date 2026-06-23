@@ -1,4 +1,4 @@
-#CloudShield
+CloudShield
 
 CloudShield is a cloud security assessment platform that scans AWS resources for security misconfigurations and provides actionable remediation recommendations.
 
