@@ -1,96 +1,190 @@
-CloudShield
 
-CloudShield is a cloud security assessment platform that scans AWS resources for security misconfigurations and provides actionable remediation recommendations.
+# 🛡️ CloudShield
 
-Overview
+## AWS Cloud Security Scanner
 
-Cloud environments often contain misconfigured resources that can expose sensitive data or increase security risks. CloudShield helps identify these issues by scanning AWS resources and generating security findings through a centralized dashboard.
+CloudShield is a cloud security assessment platform that helps identify security risks and misconfigurations in AWS infrastructure.
 
-Features
+It scans AWS resources, analyzes security settings, and provides actionable recommendations to improve cloud security.
 
- AWS Resource Discovery
- S3 Bucket Security Analysis
- IAM Security Analysis
- Security Group Analysis
- Risk Classification (Critical, High, Medium, Low)
- Security Recommendations
- Dashboard Visualization
- Scan History Tracking
+---
 
- Tech Stack
+## 🎯 Objective
 
- Frontend
+The goal of CloudShield is to simplify cloud security checks by automatically detecting common AWS configuration issues and presenting them through an easy-to-use dashboard.
 
- React
- Tailwind CSS
- Axios
- Recharts
+---
 
-Backend
+## ✨ Features
 
-FastAPI
- Python
- Pydantic
+### AWS Security Scanning
+- Scan AWS resources
+- Detect security misconfigurations
+- Generate security findings
 
-Database
+### Resource Analysis
+- S3 bucket security checks
+- IAM permission analysis
+- Security Group analysis
 
-PostgreSQL
+### Security Reporting
+- Risk classification
+  - Critical
+  - High
+  - Medium
+  - Low
+- Security recommendations
 
-Cloud Services
+### Dashboard
+- View scan results
+- Track security issues
+- Monitor cloud security posture
 
-AWS
-IAM
-S3
-EC2
-Security Groups
+---
 
-AWS SDK
-boto3
+## 🏗️ Architecture
 
-Deployment
-Docker
-AWS EC2
-Project Structure
+```
+
+User
+|
+v
+React Dashboard
+|
+v
+FastAPI Backend
+|
+v
+AWS SDK (boto3)
+|
+v
+AWS Resources
+
+S3 | IAM | EC2 | Security Groups
+
+```
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- Axios
+- Recharts
+
+### Backend
+- FastAPI
+- Python
+- Pydantic
+
+### Database
+- PostgreSQL
+
+### Cloud
+- Amazon Web Services
+  - IAM
+  - S3
+  - EC2
+  - Security Groups
+
+### Tools
+- Docker
+- GitHub Actions
+
+---
+
+## 📁 Project Structure
+
+```
+
 CloudShield/
+
+├── backend/
 │
 ├── frontend/
-├── backend/
+│
 ├── docs/
+│
 ├── screenshots/
+│
 └── README.md
-...
-Roadmap
 
-Phase 1 - Core Security Scanner
+````
 
- AWS Authentication
- S3 Bucket Scanner
-IAM Scanner
- Security Group Scanner
+---
 
-Phase 2 - Dashboard
- Findings Dashboard
- Severity Filtering
- Resource Search
+## 🚀 Getting Started
 
-Phase 3 - Deployment
+### Clone Repository
 
- Docker Setup
- AWS Deployment
-CI/CD Pipeline
+```bash
+git clone https://github.com/manyashri1901/CloudSheild.git
+````
 
-Future Enhancements
+### Backend Setup
 
- CIS Benchmark Checks
- SOC2 Compliance Checks
- Multi-Cloud Support (Azure/GCP)
- Automated Remediation Suggestions
- Email Alerting System
+```bash
+cd backend
 
-Author
+python -m venv venv
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 🗺️ Development Roadmap
+
+### Phase 1: Core Scanner
+
+* [ ] AWS authentication
+* [ ] S3 security scanner
+* [ ] IAM scanner
+* [ ] Security Group scanner
+
+### Phase 2: Dashboard
+
+* [ ] Security findings dashboard
+* [ ] Filtering and search
+* [ ] Scan history
+
+### Phase 3: Deployment
+
+* [ ] Docker setup
+* [ ] AWS deployment
+* [ ] CI/CD pipeline
+
+---
+
+## 🔮 Future Improvements
+
+* Multi-cloud support
+* AI security assistant
+
+---
+
+## 👩‍💻 Author
 
 Manya Shrivastava
 
-## License
+---
+
+## 📄 License
 
 MIT License
+
+---
